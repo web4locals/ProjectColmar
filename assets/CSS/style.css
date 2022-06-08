@@ -1,32 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Railway";
-}
 
 
-body{
-    width: 100%;
-    height: max-content;
-}
-#navs {
 
-}
-
-.the-navs{
-
-}
-
-.large-screen{
-    display: grid;
-    background-color: aqua;
-    height: 60px;
-}
-
-.large-screen .lg-logo{
-
-
-}
 
 
 
