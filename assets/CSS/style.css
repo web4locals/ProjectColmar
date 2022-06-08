@@ -10,43 +10,47 @@ body{
 }
 
 
-.nav {
+.nav {                  /*Gand-parent*/
     display: grid;
     height: 60px;
     background-color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
    
 }
-.lg-nav{
+.lg-nav{                /*parent*/
     display: grid;
     width:100%;
     height: 60px;
     grid-template-areas: "logo logo logo links links";
     justify-content:space-around;
     align-content: center;
+   
 }
-
-.logo {
-    display: inline-block;
+                    /*Oldest chid (in her 30s*/
+.logo {                
     grid-area: logo;
+    display: grid;
     border: blueviolet 2px solid;
-    justify-content: space-evenly;
+    justify-items: start;
+    align-content:center;
+    grid-template-areas:
     
 }
-
-.logo a img{
+                    /* oldest child's kids "img and span" are twins  and then there is links*/
+                    /*none of them seem to behave or stay inline, because god (me who created them decided to create them with grid) */
+.logo img{
     
     border: 1px red solid;
     padding:5px;
 }
-.logo p {
+.logo span {
     border: burlywood 1px solid;
     padding-right: 50px;
 }
 
-.links li {
-    border: 1px red solid;
-    display: inline-block;
+.links  {
+    border: 1px rgb(217, 255, 0) solid;
+    display: inline-flex;
     padding: 10px;
     grid-area: links;
 }
