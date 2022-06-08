@@ -27,11 +27,12 @@ header {
   background-color: #d8d8d8;
   height: auto;
 }
-
+                                                        /*NAVBAR*/
 nav {
   grid-area: nav;
   display: grid;
   min-height: 64px;
+  height:64px;
   background-color: rgb(255, 255, 255);
   grid-template-areas: " logo  links";
   justify-content:space-between;
@@ -60,27 +61,41 @@ nav {
  text-transform: uppercase;
  align-items: center;
  padding-bottom:0.2rem;
+ text-decoration: none;
+ color: black;
 }
 .logo-text #light{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
-
-    
+    color: #9b9b9b;    
 }
 
 .links {
   grid-area: links;
- 
+  
   }
-.links ul li {
-  display: inline-flex;
+.links a, ul, li {
+  display: inline-block;
   margin-left: 24px;
-  padding-right: 16px;
-  font-family: Arial, Helvetica, sans-serif; 
+  padding-right:5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color:black;
 }
+
+.links li:hover{
+    background-color: rgba(0, 0, 0, 0.034);
+    font-weight: 500;
+    text-shadow: -2px 3px 5px rgba(78, 76, 76, 0.863);
+    padding:20px auto 20px;
+    border-radius: 5px;
+}
+
+
 main {
   grid-area: main;
   background-color: rgb(234, 0, 255);
+ 
 }
 
 .a {
