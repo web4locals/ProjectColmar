@@ -24,14 +24,14 @@ body {
 
 header {
   grid-area: header;
-  background-color: aqua;
+  background-color: #d8d8d8;
   height: auto;
 }
 
 nav {
   grid-area: nav;
   display: grid;
-  min-height: 60px;
+  min-height: 64px;
   background-color: rgb(255, 255, 255);
   grid-template-areas: " logo  links";
   justify-content:space-between;
@@ -43,26 +43,40 @@ nav {
     display: grid;
     grid-template-areas: "logo-img logo-text";
     align-items: center;
-    padding-left: 20px;  
+    padding-left: 24px; 
+    height: 32px; 
 }
 
 .logo-img{
     grid-area: logo-img;
+    
 }
 
 .logo-text{
- 
  grid-area: logo-text;
+ font-family: "Roboto", Arial, Helvetica, sans-serif;
+ font-weight: 600;
+ font-size:1.2rem;
+ text-transform: uppercase;
+ align-items: center;
+ padding-bottom:0.2rem;
+}
+.logo-text #light{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+    
 }
 
 .links {
   grid-area: links;
-   
+ 
   }
 .links ul li {
   display: inline-flex;
-  margin-left: 10px;
-  padding-right: 10px;
+  margin-left: 24px;
+  padding-right: 16px;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 main {
   grid-area: main;
