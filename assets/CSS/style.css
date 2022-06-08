@@ -28,7 +28,7 @@ header {
   height: auto;
 }
                                                         /*NAVBAR*/
-nav {
+.large {
   grid-area: nav;
   display: grid;
   min-height: 64px;
@@ -38,6 +38,9 @@ nav {
   justify-content:space-between;
   align-items: center;
 
+}
+.mobile{
+    display:none;
 }
 
 .logo {
@@ -110,4 +113,22 @@ main {
 footer {
   grid-area: footer;
   background-color: brown;
+}
+
+@media screen and (max-width:700px){
+    .large{
+        display: none;
+    }
+
+    .mobile{
+        background-color: white;
+        height: 64px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        align-content:center;
+        grid-template-rows: 32px;
+        grid-template-columns: 16px 16px 16px 16px;
+        justify-content: space-around;
+    }
 }
